@@ -1,32 +1,45 @@
-/* Modern and Responsive Styles for Percentage Calculator */
-
 .reusable-calculator {
-    display: flex;
-    flex-direction: column;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    gap: 15px;
-    transition: all 0.3s ease;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+  transition: all 0.3s ease;
+  width: 900px; /* Set fixed width for consistent dimension */
+  height: 150px; /* Set fixed height for consistent dimension */
+  box-sizing: border-box; /* Ensure padding is included in width and height */
+}
   
   .input-section {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    width: 100%;
   }
   
-  .input-box {
-    width: 100%;
-    max-width: 200px;
+  .input-section label {
+    display: flex; /* Use flexbox to position label and input naturally */
+    align-items: center; /* Align items vertically */
+    margin-right: 10px; /* Add space between label and input */
+    white-space: nowrap; /* Prevent the label from breaking into multiple lines */
+}
+
+.input-box {
+    margin-left: 10px; /* Add space between label and input box */
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
-  }
+    flex-grow: 1; /* Make sure the input grows to take up available space */
+    width: 150px;
+}
+
   
   .action-section {
+    width: 50%;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -57,9 +70,10 @@
     background-color: #f8f9fa;
     font-size: 16px;
   }
+
   
   /* Responsive Styles */
-  @media (max-width: 768px) {
+  @media (max-width: 868px) {
     .input-section {
       flex-direction: column;
       gap: 10px;
