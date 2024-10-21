@@ -43,7 +43,7 @@
 
 /* Footer Styles */
 .App-footer {
-  margin-top: 40px;
+  margin: 40px;
   text-align: center;
   padding: 10px 0;
   font-size: 14px;
@@ -66,3 +66,13 @@ h3, h4 {
 body {
   background-color: #f0f2f5;
 } 
+
+footer nav {
+  float: right;
+}
+
+footer nav a:link {
+  color: #666;
+  background-color: transparent;
+  text-decoration: none;
+}

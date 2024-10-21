@@ -79,7 +79,15 @@ function App() {
           por 100 para descobrir que 40% dos brinquedos são carros.
         </p>
       </body>
-      <footer className="App-footer"></footer>
+      <footer className="App-footer">
+        <nav>
+          <ul>
+            <a href="#" target="_blank">
+              <b>Cookies</b>
+            </a>
+          </ul>
+        </nav>
+      </footer>
     </div>
   );
 }
